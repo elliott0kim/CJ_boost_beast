@@ -45,7 +45,7 @@ include_directories(${JWT_INCLUDEDIR})
 set(OpenSSL_ROOT_DIR "${CMAKE_SOURCE_DIR}/openssl/3.3.1")
 set(OpenSSL_LIBRARIES "${OpenSSL_ROOT_DIR}/lib")
 set(OpenSSL_INCLUDE_DIR "${OpenSSL_ROOT_DIR}/include")
-find_package(OpenSSL REQUIRED)
+find_package(OpenSSL REQUIRED HINTS ${OpenSSL_ROOT_DIR}  NO_DEFAULT_PATH)
 include_directories(${OpenSSL_INCLUDE_DIR})
 link_directories(${OpenSSL_LIBRARIES})
 
