@@ -66,7 +66,7 @@ int set_user_data(const std::string& user_id, const unsigned char& data)
         try
         {
             unsigned char* user_data_array = new unsigned char[USER_DATA_ARRAY_MAX_COUNT];
-            std::memset(user_data_array, UNSIGNED_CHAR_MIN, USER_DATA_ARRAY_MAX_COUNT);
+            memset(user_data_array, UNSIGNED_CHAR_MIN, USER_DATA_ARRAY_MAX_COUNT);
             user_data_array[0] = data;
             user_data_map[user_id] = user_data_array;
         }
@@ -86,12 +86,12 @@ int get_user_data(const std::string& user_id, const std::string& heart_rate_date
         std::lock_guard<std::mutex> lock(user_data_map_mutex); // 뮤텍스 잠금
 
         heart_rate_data_array = new unsigned char[USER_DATA_ARRAY_FOR_RETURN_MAX_COUNT];
-        std::memset(heart_rate_data_array, UNSIGNED_CHAR_MIN, USER_DATA_ARRAY_FOR_RETURN_MAX_COUNT);
+        memset(heart_rate_data_array, UNSIGNED_CHAR_MIN, USER_DATA_ARRAY_FOR_RETURN_MAX_COUNT);
 
         bool has_null = false;
         int null_start_time_minute = 0;
 
-        std::memset(heart_rate_data_array, UNSIGNED_CHAR_MIN, USER_DATA_ARRAY_FOR_RETURN_MAX_COUNT);
+        memset(heart_rate_data_array, UNSIGNED_CHAR_MIN, USER_DATA_ARRAY_FOR_RETURN_MAX_COUNT);
         int ret = select_heart_rate(user_id, heart_rate_date, heart_rate_data_array, &has_null, &null_start_time_minute);
         if  (ret != ERROR_NONE)
         {
