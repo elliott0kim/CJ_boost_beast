@@ -1,0 +1,9 @@
+x64-osx/
+x64-osx/include/
+x64-osx/include/picojson/
+x64-osx/include/picojson/picojson.h
+x64-osx/share/
+x64-osx/share/picojson/
+x64-osx/share/picojson/copyright
+x64-osx/share/picojson/vcpkg.spdx.json
+x64-osx/share/picojson/vcpkg_abi_info.txt

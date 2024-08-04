@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/jwt-cpp-x64-osx-0.7.0-4c94ad86-3fd3-4d86-94e7-fddc19a352b3",
+  "name": "jwt-cpp:x64-osx@0.7.0 c551819c65700f640e7292cd71fa1e081b1df0101891a3eacb517f1cae786043",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024.03.14"
+    ],
+    "created": "2024-07-22T11:44:54Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "jwt-cpp",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "0.7.0",
+      "downloadLocation": "git+https://github.com/Microsoft/vcpkg#ports/jwt-cpp",
+      "homepage": "https://github.com/Thalhammer/jwt-cpp",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "A header only library for creating and validating json web tokens in c++",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "jwt-cpp:x64-osx",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "c551819c65700f640e7292cd71fa1e081b1df0101891a3eacb517f1cae786043",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "Thalhammer/jwt-cpp",
+      "downloadLocation": "git+https://github.com/Thalhammer/jwt-cpp@v0.7.0",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "b6fdb93e3f2f065a2eb45fe16cb076a932b8d4bfad2251bd66d2be40d8afaf5c27a9cf17aaea61d8bfa3f5ff9ed3b45f90962dc14d72704ac5b9d717c12cc79f"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": ".//Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/ports/jwt-cpp/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "fea78c0584cc391e0dfc0240f7179851fed033b0c785f4c3d5d889597fb5e719"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": ".//Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/ports/jwt-cpp/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "1d352ce0cc1cb039abb0e9eef4a23ea82b7b41ea310ecd10f9d36d9bc3826670"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

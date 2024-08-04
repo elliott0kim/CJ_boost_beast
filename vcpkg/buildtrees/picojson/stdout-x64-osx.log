@@ -1,0 +1,6 @@
+-- Downloading https://github.com/kazuho/picojson/archive/v1.3.0.tar.gz -> kazuho-picojson-v1.3.0.tar.gz...
+-- Extracting source /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/downloads/kazuho-picojson-v1.3.0.tar.gz
+-- Using source at /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/buildtrees/picojson/src/v1.3.0-834290ad5d.clean
+-- Installing: /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/packages/picojson_x64-osx/include/picojson/picojson.h
+-- Installing: /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/packages/picojson_x64-osx/share/picojson/copyright
+-- Performing post-build validation

@@ -1,0 +1,5 @@
+-- Downloading https://github.com/Thalhammer/jwt-cpp/archive/v0.7.0.tar.gz -> Thalhammer-jwt-cpp-v0.7.0.tar.gz...
+-- Extracting source /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/downloads/Thalhammer-jwt-cpp-v0.7.0.tar.gz
+-- Using source at /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/buildtrees/jwt-cpp/src/v0.7.0-419cdb8a6e.clean
+-- Installing: /Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/packages/jwt-cpp_x64-osx/share/jwt-cpp/copyright
+-- Performing post-build validation

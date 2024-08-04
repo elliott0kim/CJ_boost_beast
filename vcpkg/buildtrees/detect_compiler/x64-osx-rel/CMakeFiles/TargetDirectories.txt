@@ -1,0 +1,2 @@
+/Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/buildtrees/detect_compiler/x64-osx-rel/CMakeFiles/edit_cache.dir
+/Users/kimdonghyun/Desktop/CJ_boost_asio/vcpkg/buildtrees/detect_compiler/x64-osx-rel/CMakeFiles/rebuild_cache.dir
