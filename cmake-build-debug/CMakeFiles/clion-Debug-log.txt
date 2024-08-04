@@ -1,0 +1,6 @@
+/Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/x64/ninja -G Ninja -S /Users/kimdonghyun/Desktop/CJ_watch_server -B /Users/kimdonghyun/Desktop/CJ_watch_server/cmake-build-debug
+-- project root dir path : /Users/kimdonghyun/Desktop/CJ_watch_server
+-- Found Boost: /Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/lib/cmake/Boost-1.85.0/BoostConfig.cmake (found suitable version "1.85.0", minimum required is "1.70") found components: system filesystem 
+-- Configuring done (0.1s)
+-- Generating done (0.0s)
+-- Build files have been written to: /Users/kimdonghyun/Desktop/CJ_watch_server/cmake-build-debug

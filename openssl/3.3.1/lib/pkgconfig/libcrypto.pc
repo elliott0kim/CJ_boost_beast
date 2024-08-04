@@ -1,0 +1,11 @@
+libdir=/usr/local/Cellar/openssl@3/3.3.1/lib
+includedir=/usr/local/Cellar/openssl@3/3.3.1/include
+enginesdir=/usr/local/Cellar/openssl@3/3.3.1/lib/engines-3
+modulesdir=/usr/local/Cellar/openssl@3/3.3.1/lib/ossl-modules
+
+Name: OpenSSL-libcrypto
+Description: OpenSSL cryptography library
+Version: 3.3.1
+Libs: -L${libdir} -lcrypto
+Libs.private: 
+Cflags: -I${includedir}
