@@ -11,7 +11,7 @@ class token_parser
 public:
     token_parser();
     ~token_parser();
-    static string parse_iss(http::request<http::string_body>& req);
+    static string parse_sub(http::request<http::string_body>& req);
 };
 
 #endif //TOKEN_PARSER_H

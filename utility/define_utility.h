@@ -19,10 +19,17 @@
 
 #define UNKNWON_ERROR                   (-1)
 #define ERROR_NONE                      0
+#define OVER_DURATION_ERROR             1
 
 #define UNSIGNED_CHAR_MIN               0
 #define UNSIGNED_CHAR_MAX               255
 
 #define CHANGE_WORK_ON_TO_WORK_OFF      100
+
+#define ERROR_DURATION_INITIALIZER      1000
+
+#define IV_SIZE                         16
+
+
 
 #endif //DEFINE_UTILITY_H

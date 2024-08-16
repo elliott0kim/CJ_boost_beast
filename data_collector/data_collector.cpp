@@ -253,3 +253,85 @@ int get_last_heart_rate(std::unordered_map<std::string, unsigned char>& heart_ra
         return UNKNWON_ERROR;
     }
 }
+
+int date_passed()
+{
+    try
+    {
+        // 뮤텍스로 안잠그면 개박살남... 알지?
+        std::lock_guard<std::mutex> lock(user_data_map_mutex); // 뮤텍스 잠금
+
+        std::vector<std::string> delete_user_id_list;
+        for (const auto& pair : user_data_map)
+        {
+            std::string user_id = pair.first;
+            unsigned char* user_data = pair.second;
+
+            int total_count = 0;
+            for (int idx = 0 ; idx < USER_DATA_ARRAY_MAX_COUNT ; idx++)
+            {
+                if (user_data_map[user_id][idx] != UNSIGNED_CHAR_MIN)
+                {
+                    total_count += 1;
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            int retry = 0;
+            while (retry < 3)
+            {
+
+                int ret = insert_heart_rate_by_scheduler(user_id, user_data, total_count);
+                if (ret != ERROR_NONE)
+                {
+                    if (ret == OVER_DURATION_ERROR)
+                    {
+                        break;
+                    }
+                    retry += 1;
+                    // 반복해서 처리하고 다음으로 무조건 넘어가서 다른애들이라도 저장해줘야함
+                    // 여기서 그냥 return으로 끊고 나가면 다른애들도 저장 못함
+                }
+                else
+                {
+                    delete user_data;
+                    user_data_map[user_id] = nullptr;
+                    // 일단 map 가지고 반복문 돌리는 중이니까 지울애 키값 모아만 두자
+                    delete_user_id_list.push_back(user_id);
+                    break;
+                }
+            }
+        }
+
+        // 지우는 과정
+        for (int idx = 0 ; idx < delete_user_id_list.size() ; idx++)
+        {
+            user_data_map.erase(delete_user_id_list.at(idx));
+        }
+
+        return ERROR_NONE;
+    }
+    catch (...)
+    {
+        return UNKNWON_ERROR;
+    }
+}
+
+
+
+int add_data_service(std::vector<std::string>& name, std::vector<int>& heart_rate, std::vector<int>& walk, std::vector<float>& move)
+{
+    try
+    {
+        select_add_data(name, heart_rate, walk, move);
+        PRINT("finish");
+        return ERROR_NONE;
+    }
+    catch (...)
+    {
+        return UNKNWON_ERROR;
+    }
+}

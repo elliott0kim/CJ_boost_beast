@@ -11,7 +11,7 @@ token_parser::~token_parser()
 {
 }
 
-string token_parser::parse_iss(http::request<http::string_body>& req)
+string token_parser::parse_sub(http::request<http::string_body>& req)
 {
     try
     {
@@ -26,7 +26,7 @@ string token_parser::parse_iss(http::request<http::string_body>& req)
         }
 
         auto decoded = jwt::decode(token);
-        string claims = decoded.get_payload_claim("iss").as_string();
+        string claims = decoded.get_payload_claim("sub").as_string();
         return claims;
     }
     catch (const exception& e)

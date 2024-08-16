@@ -106,7 +106,7 @@ void handle_get_heart_rate(beast::tcp_stream& stream, http::request<http::string
 
 void handle_set_heart_rate(beast::tcp_stream& stream, http::request<http::string_body>& req)
 {
-    std::string user_id = token_parser::parse_iss(req);
+    std::string user_id = token_parser::parse_sub(req);
     //PRINT(iss);
     if (req.method() != http::verb::post)
     {
@@ -287,6 +287,70 @@ void handle_last_heart_rate(beast::tcp_stream& stream, http::request<http::strin
     http::write(stream, res);
 }
 
+void handle_add_data(beast::tcp_stream& stream, http::request<http::string_body>& req)
+{
+    std::vector<std::string> name;
+    std::vector<int> heart_rate;
+    std::vector<int> walk;
+    std::vector<float> move;
+
+    int ret = add_data_service(name, heart_rate, walk, move);
+    if(ret != ERROR_NONE)
+    {
+        unknown_error(stream, req);
+        return;
+    }
+
+    std::string response_new;
+    response_new.append("{");
+    for (int idx = 0 ; idx < name.size() ; idx++)
+    {
+        response_new.append("[ ");
+        response_new.append("\"");
+        response_new.append("name");
+        response_new.append("\"");
+        response_new.append(" : ");
+        response_new.append(name.at(idx));
+
+        response_new.append(" , ");
+
+        response_new.append("\"");
+        response_new.append("heart_rate");
+        response_new.append("\"");
+        response_new.append(" : ");
+        response_new.append(std::to_string(heart_rate.at(idx)));
+
+        response_new.append(" , ");
+
+        response_new.append("\"");
+        response_new.append("walk");
+        response_new.append("\"");
+        response_new.append(" : ");
+        response_new.append(std::to_string(walk.at(idx)));
+
+        response_new.append(" , ");
+
+        response_new.append("\"");
+        response_new.append("walk");
+        response_new.append("\"");
+        response_new.append(" : ");
+        response_new.append(std::to_string(move.at(idx)));
+
+        response_new.append(" ]");
+
+        response_new.append(" , ");
+    }
+    response_new.pop_back();  // ", " 문자 제거
+    response_new.pop_back();  // ", " 문자 제거
+    response_new.pop_back();  // ", " 문자 제거
+    response_new.append("}");
+    http::response<http::string_body> res{http::status::ok, req.version()};
+    res.set(http::field::content_type, "application/json");
+    // 여기서 데이터 넣어줘야함
+    res.body() = make_json_format(SUCCESS, response_new);
+    res.prepare_payload();
+    http::write(stream, res);
+}
 
 void handler_insert()
 {
@@ -294,5 +358,6 @@ void handler_insert()
     handlers.insert({"/setHeartRate", handle_set_heart_rate});
     handlers.insert({"/workStatusOff", handle_work_status_off});
     handlers.insert({"/lastHeartRate", handle_last_heart_rate});
+    handlers.insert({"/newDataSelect", handle_add_data});
 }
  

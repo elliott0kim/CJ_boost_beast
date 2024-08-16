@@ -17,6 +17,7 @@ void session::start()
 
 void session::do_read()
 {
+    buffer_.clear();
     auto self = shared_from_this();
     http::async_read(stream_, buffer_, request_,
         [self](beast::error_code ec, std::size_t)
@@ -31,6 +32,9 @@ void session::do_read()
 void session::handle_request()
 {
     std::string path = std::string(request_.target());
+    std::ostringstream oss;
+    oss << request_;
+    std::cout << oss.str() << std::endl;
     std::string::size_type query_pos = path.find('?');
 
     std::string path_to_uri;

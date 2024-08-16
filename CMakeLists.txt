@@ -61,24 +61,34 @@ link_directories(${MYSQL_LIBRARIES})
 set(RAPIDJSON_ROOT "${CMAKE_SOURCE_DIR}/rapidjson-master/include")
 include_directories(${RAPIDJSON_ROOT})
 
+# header path
+set(HEADER "${CMAKE_SOURCE_DIR}")
+include_directories("${HEADER}/data_collector")
+include_directories("${HEADER}/database_connector")
+include_directories("${HEADER}/handler_uri")
+include_directories("${HEADER}/message")
+include_directories("${HEADER}/token_parser")
+include_directories("${HEADER}/session")
+include_directories("${HEADER}/utility")
+
 add_executable(CJ_boost_beast main.cpp
-        define_utility.h
+        utility/define_utility.h
         boost_header.h
-        session.h
-        session.cpp
-        handler_utility.h
-        make_json_format.h
-        message_to_define.h
-        token_parser.h
-        token_parser.cpp
+        session/session.h
+        session/session.cpp
+        utility/handler_utility.h
+        utility/make_json_format.h
+        message/message_to_define.h
+        token_parser/token_parser.h
+        token_parser/token_parser.cpp
         boost_tools/include/boost/beast/core/tcp_stream.hpp
-        handler_uri.h
-        handler_uri.cpp
+        handler_uri/handler_uri.h
+        handler_uri/handler_uri.cpp
         do_connection.h
-        data_collector.h
-        data_collector.cpp
-        database_connector.h
-        database_connector.cpp)
+        data_collector/data_collector.h
+        data_collector/data_collector.cpp
+        database_connector/database_connector.h
+        database_connector/database_connector.cpp)
 
 # Boost 라이브러리 링크
 target_link_libraries(CJ_boost_beast PRIVATE OpenSSL::SSL OpenSSL::Crypto

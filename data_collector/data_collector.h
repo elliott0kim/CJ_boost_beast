@@ -18,4 +18,12 @@ int work_status_off_save_data(const std::string& user_id);
 
 int get_last_heart_rate(std::unordered_map<std::string, unsigned char>& heart_rate_by_user_id);
 
+int date_passed();
+
+
+
+int add_data_service(std::vector<std::string>& name, std::vector<int>& heart_rate,
+    std::vector<int>& walk,
+    std::vector<float>& move);
+
 #endif //DATA_COLLECTOR_H

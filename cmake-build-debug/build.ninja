@@ -52,44 +52,44 @@ build cmake_object_order_depends_target_CJ_boost_beast: phony || CMakeFiles/CJ_b
 build CMakeFiles/CJ_boost_beast.dir/main.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/main.cpp || cmake_object_order_depends_target_CJ_boost_beast
   DEP_FILE = CMakeFiles/CJ_boost_beast.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -isystem /usr/local/include
+  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/data_collector -I/Users/kimdonghyun/Desktop/CJ_watch_server/database_connector -I/Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri -I/Users/kimdonghyun/Desktop/CJ_watch_server/message -I/Users/kimdonghyun/Desktop/CJ_watch_server/token_parser -I/Users/kimdonghyun/Desktop/CJ_watch_server/session -I/Users/kimdonghyun/Desktop/CJ_watch_server/utility -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/CJ_boost_beast.dir
   OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir
 
-build CMakeFiles/CJ_boost_beast.dir/session.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/session.cpp || cmake_object_order_depends_target_CJ_boost_beast
-  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/session.cpp.o.d
+build CMakeFiles/CJ_boost_beast.dir/session/session.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/session/session.cpp || cmake_object_order_depends_target_CJ_boost_beast
+  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/session/session.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -isystem /usr/local/include
+  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/data_collector -I/Users/kimdonghyun/Desktop/CJ_watch_server/database_connector -I/Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri -I/Users/kimdonghyun/Desktop/CJ_watch_server/message -I/Users/kimdonghyun/Desktop/CJ_watch_server/token_parser -I/Users/kimdonghyun/Desktop/CJ_watch_server/session -I/Users/kimdonghyun/Desktop/CJ_watch_server/utility -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/CJ_boost_beast.dir
-  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir
+  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir/session
 
-build CMakeFiles/CJ_boost_beast.dir/token_parser.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/token_parser.cpp || cmake_object_order_depends_target_CJ_boost_beast
-  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/token_parser.cpp.o.d
+build CMakeFiles/CJ_boost_beast.dir/token_parser/token_parser.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/token_parser/token_parser.cpp || cmake_object_order_depends_target_CJ_boost_beast
+  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/token_parser/token_parser.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -isystem /usr/local/include
+  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/data_collector -I/Users/kimdonghyun/Desktop/CJ_watch_server/database_connector -I/Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri -I/Users/kimdonghyun/Desktop/CJ_watch_server/message -I/Users/kimdonghyun/Desktop/CJ_watch_server/token_parser -I/Users/kimdonghyun/Desktop/CJ_watch_server/session -I/Users/kimdonghyun/Desktop/CJ_watch_server/utility -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/CJ_boost_beast.dir
-  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir
+  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir/token_parser
 
-build CMakeFiles/CJ_boost_beast.dir/handler_uri.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri.cpp || cmake_object_order_depends_target_CJ_boost_beast
-  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/handler_uri.cpp.o.d
+build CMakeFiles/CJ_boost_beast.dir/handler_uri/handler_uri.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri/handler_uri.cpp || cmake_object_order_depends_target_CJ_boost_beast
+  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/handler_uri/handler_uri.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -isystem /usr/local/include
+  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/data_collector -I/Users/kimdonghyun/Desktop/CJ_watch_server/database_connector -I/Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri -I/Users/kimdonghyun/Desktop/CJ_watch_server/message -I/Users/kimdonghyun/Desktop/CJ_watch_server/token_parser -I/Users/kimdonghyun/Desktop/CJ_watch_server/session -I/Users/kimdonghyun/Desktop/CJ_watch_server/utility -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/CJ_boost_beast.dir
-  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir
+  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir/handler_uri
 
-build CMakeFiles/CJ_boost_beast.dir/data_collector.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/data_collector.cpp || cmake_object_order_depends_target_CJ_boost_beast
-  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/data_collector.cpp.o.d
+build CMakeFiles/CJ_boost_beast.dir/data_collector/data_collector.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/data_collector/data_collector.cpp || cmake_object_order_depends_target_CJ_boost_beast
+  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/data_collector/data_collector.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -isystem /usr/local/include
+  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/data_collector -I/Users/kimdonghyun/Desktop/CJ_watch_server/database_connector -I/Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri -I/Users/kimdonghyun/Desktop/CJ_watch_server/message -I/Users/kimdonghyun/Desktop/CJ_watch_server/token_parser -I/Users/kimdonghyun/Desktop/CJ_watch_server/session -I/Users/kimdonghyun/Desktop/CJ_watch_server/utility -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/CJ_boost_beast.dir
-  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir
+  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir/data_collector
 
-build CMakeFiles/CJ_boost_beast.dir/database_connector.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/database_connector.cpp || cmake_object_order_depends_target_CJ_boost_beast
-  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/database_connector.cpp.o.d
+build CMakeFiles/CJ_boost_beast.dir/database_connector/database_connector.cpp.o: CXX_COMPILER__CJ_boost_beast_unscanned_Debug /Users/kimdonghyun/Desktop/CJ_watch_server/database_connector/database_connector.cpp || cmake_object_order_depends_target_CJ_boost_beast
+  DEP_FILE = CMakeFiles/CJ_boost_beast.dir/database_connector/database_connector.cpp.o.d
   FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -fcolor-diagnostics
-  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -isystem /usr/local/include
+  INCLUDES = -I/Users/kimdonghyun/Desktop/CJ_watch_server/boost_tools/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/vcpkg/installed/x64-osx/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/rapidjson-master/include -I/Users/kimdonghyun/Desktop/CJ_watch_server/data_collector -I/Users/kimdonghyun/Desktop/CJ_watch_server/database_connector -I/Users/kimdonghyun/Desktop/CJ_watch_server/handler_uri -I/Users/kimdonghyun/Desktop/CJ_watch_server/message -I/Users/kimdonghyun/Desktop/CJ_watch_server/token_parser -I/Users/kimdonghyun/Desktop/CJ_watch_server/session -I/Users/kimdonghyun/Desktop/CJ_watch_server/utility -isystem /usr/local/include
   OBJECT_DIR = CMakeFiles/CJ_boost_beast.dir
-  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir
+  OBJECT_FILE_DIR = CMakeFiles/CJ_boost_beast.dir/database_connector
 
 
 # =============================================================================
@@ -99,7 +99,7 @@ build CMakeFiles/CJ_boost_beast.dir/database_connector.cpp.o: CXX_COMPILER__CJ_b
 #############################################
 # Link the executable CJ_boost_beast
 
-build CJ_boost_beast: CXX_EXECUTABLE_LINKER__CJ_boost_beast_Debug CMakeFiles/CJ_boost_beast.dir/main.cpp.o CMakeFiles/CJ_boost_beast.dir/session.cpp.o CMakeFiles/CJ_boost_beast.dir/token_parser.cpp.o CMakeFiles/CJ_boost_beast.dir/handler_uri.cpp.o CMakeFiles/CJ_boost_beast.dir/data_collector.cpp.o CMakeFiles/CJ_boost_beast.dir/database_connector.cpp.o | /usr/local/lib/libssl.dylib /usr/local/lib/libcrypto.dylib
+build CJ_boost_beast: CXX_EXECUTABLE_LINKER__CJ_boost_beast_Debug CMakeFiles/CJ_boost_beast.dir/main.cpp.o CMakeFiles/CJ_boost_beast.dir/session/session.cpp.o CMakeFiles/CJ_boost_beast.dir/token_parser/token_parser.cpp.o CMakeFiles/CJ_boost_beast.dir/handler_uri/handler_uri.cpp.o CMakeFiles/CJ_boost_beast.dir/data_collector/data_collector.cpp.o CMakeFiles/CJ_boost_beast.dir/database_connector/database_connector.cpp.o | /usr/local/lib/libssl.dylib /usr/local/lib/libcrypto.dylib
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/lib -Wl,-rpath,/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/lib64  /usr/local/lib/libssl.dylib  /usr/local/lib/libcrypto.dylib  -lcrypto.3  -lfido2.1.8.0  -lssl.3  -lmysqlcppconn8.2.8.1.0
   LINK_PATH = -L/Users/kimdonghyun/Desktop/CJ_watch_server/openssl/3.3.1/lib   -L/Users/kimdonghyun/Desktop/CJ_watch_server/mysql-connector-c++-8.1.0/lib64
@@ -114,8 +114,9 @@ build CJ_boost_beast: CXX_EXECUTABLE_LINKER__CJ_boost_beast_Debug CMakeFiles/CJ_
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/kimdonghyun/Desktop/CJ_watch_server/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/x64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-  DESC = No interactive CMake dialog available...
+  COMMAND = cd /Users/kimdonghyun/Desktop/CJ_watch_server/cmake-build-debug && /usr/local/Cellar/cmake/3.30.2/bin/ccmake -S/Users/kimdonghyun/Desktop/CJ_watch_server -B/Users/kimdonghyun/Desktop/CJ_watch_server/cmake-build-debug
+  DESC = Running CMake cache editor...
+  pool = console
   restat = 1
 
 build edit_cache: phony CMakeFiles/edit_cache.util
